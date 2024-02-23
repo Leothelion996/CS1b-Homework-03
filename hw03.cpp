@@ -1,8 +1,8 @@
 #include "hw03.h"
 
-main()
+int main()
 {
-  showchoices();
+  showChoices();
 
   return 0;
 }
