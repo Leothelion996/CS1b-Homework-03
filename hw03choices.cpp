@@ -5,8 +5,10 @@ void showChoices()
 {
   //sets flag for loop
   bool flag = false;
+  
   int menuChoice;
 
+  //prints choices to screen. Loops based on selection.
   do
   {
     std::cout << "How would you like to input the time?\n";
@@ -15,17 +17,17 @@ void showChoices()
 
     switch(menuChoice)
     {
-      case 1:
+      case 1: //goes to func for 24hr input menu
         getTimeTwentyFourHour();
         break;
-      case 2:
+      case 2: //goes to func for 12hr input menu
         getTimeTwelveHour();
         break;
-      case 3:
+      case 3: //exit program
         std::cout << "Goodbye.\n";
         flag = true;
         break;
-      default:
+      default: //for wrong input.
         std::cout << "INVALID ENTRY.\n";
         break;
     }

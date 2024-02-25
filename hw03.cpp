@@ -2,6 +2,7 @@
 
 int main()
 {
+  //Calls menu
   showChoices();
 
   return 0;
