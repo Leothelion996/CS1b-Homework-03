@@ -16,8 +16,8 @@ void showChoices()
     switch(menuChoice)
     {
       case 1:
-      std::cout << "choice 1";
-        //getTimeTwentyFourHour();
+      std::cout << "choice 1\n";
+        getTimeTwentyFourHour();
         break;
       case 2:
         std::cout << "choice 2";
