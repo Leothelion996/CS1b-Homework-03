@@ -1,32 +1,26 @@
 #include "hw03.h"
 
 //
-int twentyFourToTwelev(int* hourP, int* minP)
+int twentyFourToTwelev(int hour, int min)
 {
-    int hour = *hourP;
-    int min = *minP;
+  int day;
 
   if(hour > 11 && hour < 24)
   {
     hour = hour - 12;
-    std::cout << "The time is: " << hour << ":";
-    singleDigit(min);
-    std::cout << " PM\n";
+    day = 2;
   }
   else if(hour < 12)
   {
-    std::cout << "The time is: " << hour << ":";
-    singleDigit(min);
-    std::cout << " AM\n";
-  } 
+    day = 1;
+  }
   else 
   {
-    hour - 24;
-    std::cout << "The time is: 00:";
-    singleDigit(min);
-    std::cout << " AM\n";
+    hour = hour - 24;
+    day = 1;
   }
-  
+
+  print(&hour, &min, &day);
 
   return 0;
 }

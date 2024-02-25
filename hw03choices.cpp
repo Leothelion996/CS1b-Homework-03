@@ -16,19 +16,17 @@ void showChoices()
     switch(menuChoice)
     {
       case 1:
-      std::cout << "choice 1\n";
         getTimeTwentyFourHour();
         break;
       case 2:
-        std::cout << "choice 2";
-        //getTimeTwelveHour();
+        getTimeTwelveHour();
         break;
       case 3:
         std::cout << "Goodbye.\n";
         flag = true;
         break;
       default:
-        std::cout << "INVALID ENTRY." << std::endl;
+        std::cout << "INVALID ENTRY.\n";
         break;
     }
 

@@ -2,8 +2,7 @@
 
 void getTimeTwentyFourHour()
 {
-  int hour;
-  int minute;
+  int hour, minute;
 
   //user input hours
   std::cout << "What is the hour? (HH)";
@@ -28,5 +27,5 @@ void getTimeTwentyFourHour()
   }
 
   //pass time to function to convert time
-  twentyFourToTwelev(&hour, &minute);
+  twentyFourToTwelev(hour, minute);
 }

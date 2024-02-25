@@ -2,12 +2,10 @@
 
 void twelveToTwentyFour(int* hourP, int* minP, int* dayTime)
 {
-    int dayT = *dayTime;
-
-  if(dayT == 2)
+  if(*dayTime == 2)
   {
-    hourP = hourP + 12;
+    *hourP = *hourP + 12;
   }
-
+  *dayTime = 0;
   print(hourP, minP, dayTime);
 }
